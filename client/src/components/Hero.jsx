@@ -179,8 +179,6 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        
-        <div className="scanline"></div>
       </motion.div>
     </section>
   );
