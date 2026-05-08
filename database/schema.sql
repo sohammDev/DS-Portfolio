@@ -1,0 +1,34 @@
+CREATE TABLE projects (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  title VARCHAR(255) NOT NULL,
+  description TEXT NOT NULL,
+  tech_stack VARCHAR(255) NOT NULL,
+  project_type VARCHAR(100),
+  github_url VARCHAR(255),
+  live_url VARCHAR(255),
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE experience (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  role VARCHAR(255) NOT NULL,
+  company VARCHAR(255) NOT NULL,
+  duration VARCHAR(100) NOT NULL,
+  description TEXT NOT NULL,
+  tech_used VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE skills (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(100) NOT NULL,
+  category VARCHAR(100) NOT NULL,
+  proficiency INT
+);
+
+CREATE TABLE messages (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(255) NOT NULL,
+  email VARCHAR(255) NOT NULL,
+  message TEXT NOT NULL,
+  sent_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
